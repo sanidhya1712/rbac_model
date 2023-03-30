@@ -1,3 +1,3 @@
-import roles from "./models/roles";
+import {roles} from "./models/roles";
  
 export {roles}
