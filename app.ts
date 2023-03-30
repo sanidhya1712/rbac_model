@@ -1,3 +1,6 @@
 import {roles} from "./models/roles";
  
-export {roles}
+const returnValue = (val: string)=>{
+    return "** "+val+" **"
+}
+export {roles, returnValue}
