@@ -1,9 +1,9 @@
 // import {roles} from "./models/roles";
-import { getToken, refreshToken } from "./auth/services/auth";
-import { getMembers } from "./auth/services/member";
-import { getPermissions } from "./auth/services/permission";
+import { getToken, refreshToken } from "./src/services/auth";
+import { getMembers } from "./src/services/member";
+import { getPermissions } from "./src/services/permission";
 import { getPolicies, updatePolicies } from "./auth/services/policy";
-import { getRole } from "./auth/services/role";
+import { getRole } from "./src/services/role";
 
 const returnValue = (val)=>{
     return "** "+val+" **"
