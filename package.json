@@ -4,12 +4,15 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=local PORT=5001 npx ts-node-dev --transpile-only app.ts",
+    "build": "npx rimraf lib && npx tsc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.1346.0"
+    "aws-sdk": "^2.1346.0",
+    "typescript": "^5.0.3"
   },
   "devDependencies": {
     "@types/node": "^18.15.11"
