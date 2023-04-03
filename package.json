@@ -2,13 +2,15 @@
   "name": "rbac_model",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=local PORT=5001 npx ts-node-dev --transpile-only app.ts",
     "build": "npx rimraf lib && npx tsc"
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
