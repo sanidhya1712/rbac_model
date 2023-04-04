@@ -1,4 +1,4 @@
-// import {roles} from "./models/roles";
+import {roles} from "./models/roles";
 import { getToken, refreshToken } from "./services/auth";
 import { getMembers } from "./services/member";
 import { getPermissions } from "./services/permission";
@@ -10,4 +10,4 @@ const returnValue = (val)=>{
 }
 
 // getPermissions("sajdnjas")
-export {returnValue, getMembers, getPermissions,getToken, refreshToken, getPolicies, getRole, updatePolicies}
+export {returnValue, getMembers, getPermissions,getToken, refreshToken, getPolicies, getRole, updatePolicies, roles}
