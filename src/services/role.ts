@@ -1,4 +1,5 @@
 import { filters } from "../types/permission";
-export const getRole = (token: string, filters: filters = null)=>{
-
+import { getRequest } from "../utilities/request";
+export const getRole = async(token: string, filters: filters = null)=>{
+    await getRequest('/api')
 }

@@ -1,8 +1,9 @@
 import { filters } from "../types/permission";
-export const getToken = (token: string, filters: filters = null)=>{
-
+import { getRequest, postRequest } from "../utilities/request";
+export const getToken = async(token: string, filter: filters = null)=>{
+    await getRequest('/api')
 }
 
-export const refreshToken = (token: string, filters: filters = null)=>{
-
+export const refreshToken = async(token: string, filters: filters = null)=>{
+    await postRequest('/api')
 }
