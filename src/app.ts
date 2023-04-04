@@ -9,5 +9,5 @@ const returnValue = (val)=>{
     return "** "+val+" **"
 }
 
-getPermissions("sajdnjas")
+// getPermissions("sajdnjas")
 export {returnValue, getMembers, getPermissions,getToken, refreshToken, getPolicies, getRole, updatePolicies}

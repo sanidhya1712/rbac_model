@@ -126,7 +126,7 @@ const handleError = err => {
 
 // };
 
-export const getRequest = async (url, headers = _authorizationHeaders()) => {
+export const getRequest = async (url, token, headers = _authorizationHeaders()) => {
 
     try {
 
@@ -150,7 +150,7 @@ export const getRequest = async (url, headers = _authorizationHeaders()) => {
 
 };
 
-export const postRequest = async (url, data = {}, headers = _authorizationHeaders()) => {
+export const postRequest = async (url, token, data = {},  headers = _authorizationHeaders()) => {
 
     try {
 
@@ -187,7 +187,7 @@ export const postRequest = async (url, data = {}, headers = _authorizationHeader
 
 
 
-export const putRequest = async (url, data = {}, headers = _authorizationHeaders()) => {
+export const putRequest = async (url, token, data = {}, headers = _authorizationHeaders()) => {
 
     try {
 
@@ -248,7 +248,7 @@ export const putRequest = async (url, data = {}, headers = _authorizationHeaders
 
 
 
-export const deleteRequest = async (url, headers = _authorizationHeaders()) => {
+export const deleteRequest = async (url, token, headers = _authorizationHeaders()) => {
 
     try {
         const res = await axios({
