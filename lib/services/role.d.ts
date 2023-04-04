@@ -1,1 +1,2 @@
-export declare const getRole: () => void;
+import { filters } from "../types/permission";
+export declare const getRole: (token: string, filters?: filters) => void;

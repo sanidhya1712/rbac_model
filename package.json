@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/app.js",
+  "types": "lib/app.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=local PORT=5001 npx ts-node-dev --transpile-only app.ts",
-    "build": "npx rimraf lib && npx tsc"
+    "dev": "NODE_ENV=local PORT=5001 npx ts-node-dev --transpile-only src/app.ts",
+    "build": "npx rimraf lib && npx tsc",
+    "prepare": "npm run build"
   },
   "files": [
     "lib/**/*"
