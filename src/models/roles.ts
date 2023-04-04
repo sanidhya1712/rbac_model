@@ -1,4 +1,4 @@
-export abstract class roles {
+export class roles {
     role : string
     constructor(role: string) {
         this.role = role
