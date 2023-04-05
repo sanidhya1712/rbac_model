@@ -126,7 +126,7 @@ const handleError = err => {
 
 // };
 
-export const getRequest = async (url, token, headers = _authorizationHeaders()) => {
+export const getRequest = async (url, token, headers = _authorizationHeaders()): Promise<{ data:string }> => {
 
     try {
 
