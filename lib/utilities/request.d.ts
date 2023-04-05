@@ -1,6 +1,8 @@
 export declare const getRequest: (url: any, token: any, headers?: {
     "Content-Type": string;
-}) => Promise<any>;
+}) => Promise<{
+    data: string;
+}>;
 export declare const postRequest: (url: any, token: any, data?: {}, headers?: {
     "Content-Type": string;
 }) => Promise<any>;
@@ -16,7 +18,9 @@ export declare const api: {
     }) => Promise<any>;
     getRequest: (url: any, token: any, headers?: {
         "Content-Type": string;
-    }) => Promise<any>;
+    }) => Promise<{
+        data: string;
+    }>;
     postRequest: (url: any, token: any, data?: {}, headers?: {
         "Content-Type": string;
     }) => Promise<any>;
